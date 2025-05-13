@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Brief Introduction to Experimental Platforms &mdash; RflySimDoc 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Simulink-Based Controller Design and Simulation Platform" href="ControllerDesignAndSimulationPlatform.html" />
+    <link rel="prev" title="3. Hardware Platform Configuration" href="../2_Configuration/HardwareConfiguration.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> RflySimDoc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_Start/WhatIsRflysim.html">1. What is RflySim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_Start/GettingStarted.html">2. Getting Started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Modeling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_Modeling/Modeling.html">1. Modeling</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Experimental Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_Configuration/Introduction.html">1. Overall Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_Configuration/SoftwareInstallation.html">2. Software Package Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_Configuration/HardwareConfiguration.html">3. Hardware Platform Configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Experimental Platform Usage:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Brief Introduction to Experimental Platforms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#platform-composition">1.1. Platform Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#platform-advantage">1.2. Platform Advantage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ControllerDesignAndSimulationPlatform.html">2. Simulink-Based Controller Design and Simulation Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PSPToolbox.html">3. PSP Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PixhawkHardwareSystem.html">4. Pixhawk Hardware System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HILSimulator.html">5. HIL Simulation Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">6. Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">RflySim Advanced Functions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/Advanced.html">1. Installation Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/BasicFeatures.html">2. Basic Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/OtherTypesofVehicles.html">3. Other Types of Vehicles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/Customizationof3DScenarios.html">4. Customization of 3D Scenarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/UAVSwarmControl.html">5. UAV Swarm Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/UAVVisionAIControl.html">6. UAV Vision/AI Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Pro/FuturePlan.html">7. Future Plan</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Course</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../5_Course/Book.html">1. Book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_Course/CourseContent.html">2. Course Content</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Download &amp; Support:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../7_DownloadAndSupport/DownloadAndSupport.html">1. Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7_DownloadAndSupport/DownloadAndSupport.html#faq">2. FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7_DownloadAndSupport/DownloadAndSupport.html#support">3. Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7_DownloadAndSupport/DownloadAndSupport.html#reference">4. Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RflySimDoc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>1. Brief Introduction to Experimental Platforms</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/3_Using/Introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="brief-introduction-to-experimental-platforms">
+<h1>1. Brief Introduction to Experimental Platforms<a class="headerlink" href="#brief-introduction-to-experimental-platforms" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="platform-composition">
+<h2>1.1. Platform Composition<a class="headerlink" href="#platform-composition" title="Permalink to this headline">¶</a></h2>
+<p>The experimental platform is a rapid development platform for multicopter control
+algorithm design based on MATLAB/Simulink and Pixhawk. It is mainly composed
+of the following five parts: the Simulink-based Controller Design and Simulation
+Platform, the HIL Simulation Platform, the <a class="reference external" href="https://docs.px4.io/master/en/flight_controller/pixhawk_series.html">Pixhawk Autopilot System</a> ,
+the Multicopter Hardware System, and the Instructional Package.</p>
+<p>(1). Simulink-based Controller Design and Simulation Platform</p>
+<p>As shown in Fig. 3.1, this platform has a high-fidelity nonlinear model for simulating
+various multicopter dynamics. Furthermore, there is an interface for communicating
+with the FlightGear simulator to provide a real-time 3D display for
+the flight status (e.g., trajectory and attitude) of the simulated multicopter.
+Multicopter control algorithms can be conveniently designed on this Simulink-based
+simulation platform and then verified with SIL simulations. Furthermore, the
+Pixhawk Support Package (PSP) toolbox can be used to generate C/C++ code
+of the control algorithms, which is then compiled and uploaded to a Pixhawk
+autopilot.</p>
+<blockquote>
+<div><div class="figure align-center" id="id4">
+<img alt="../_images/Quan-ch3-Fig3.1.jpg" src="../_images/Quan-ch3-Fig3.1.jpg" />
+<p class="caption"><span class="caption-text">Fig. 3.1 Simulink-based controller design and simulation platform</span></p>
+</div>
+</div></blockquote>
+<p>(2). HIL Simulation Platform</p>
+<p>The HIL simulation platform includes a real-time motion simulation
+software—CopterSim (see Fig. 3.2a) and a 3D visual display software—3DDisplay (see
+Fig. 3.2b). The simulation model of CopterSim is obtained by importing
+parameters from the Simulink-based simulation platform mentioned earlier. Both
+CopterSim and 3DDisplay must run on a computer with Windows OS (Win7
+or higher, x64). They are connected with the Pixhawk autopilot through a USB
+cable, thereby establishing a closed-loop control system for HIL simulations.</p>
+<blockquote>
+<div><div class="figure align-center" id="id5">
+<img alt="../_images/Quan-ch3-Fig3.2.jpg" src="../_images/Quan-ch3-Fig3.2.jpg" />
+<p class="caption"><span class="caption-text">Fig. 3.2 HIL simulation platform</span></p>
+</div>
+</div></blockquote>
+<p>(3). Pixhawk Autopilot System</p>
+<p>Figure 3.3 illustrates the entire Pixhawk autopilot system that includes a
+Pixhawk autopilot, an RC transmitter, an RC receiver, and a Ground Control
+Station (GCS). The Pixhawk autopilot used in this book is composed of
+Pixhawk 1 (2MB flash version) <a class="footnote-reference" href="#f2" id="id1">[1]</a> autopilot hardware and PX4 autopilot software.
+The PX4 autopilot software <a class="footnote-reference" href="#f3" id="id2">[2]</a> has a built-in Real-Time Operating System (RTOS)
+to ensure basic functions, such as multi-thread scheduling, low-level drivers, and
+algorithm execution. The Pixhawk autopilot uses an RC receiver to wirelessly
+connect with the corresponding RC transmitter for receiving the control commands
+from the remote pilot on the ground. Further, the Pixhawk autopilot can
+also wirelessly connect with GCS through a pair of radio telemetry to exchange
+flight data and mission commands.</p>
+<blockquote>
+<div><div class="figure align-center" id="id6">
+<img alt="../_images/Quan-ch3-Fig3.3.jpg" src="../_images/Quan-ch3-Fig3.3.jpg" />
+<p class="caption"><span class="caption-text">Fig. 3.3 Pixhawk autopilot system</span></p>
+</div>
+</div></blockquote>
+<p>(4). Multicopter Hardware System</p>
+<p>As shown in Fig. 3.4, a multicopter hardware system is usually composed of
+an airframe system, a propulsion system, external sensors, a test stand, etc.
+Combining the Pixhawk autopilot and a multicopter hardware system requires
+an integrated multicopter flight platform that can be used to perform specific
+flight tasks. According to the actual flight performance requirements, the
+multicopter airframe system can be designed with different configurations, such as
+quadcopters, hexacopters, and coaxial octocopters. In this book, a small quadcopter
+is chosen as an example to study its hardware system design, such as
+airframe design, propulsion system selection. Then, the control algorithms are
+designed for the resulting multicopter hardware system.</p>
+<blockquote>
+<div><div class="figure align-center" id="id7">
+<img alt="../_images/Quan-ch3-Fig3.4.jpg" src="../_images/Quan-ch3-Fig3.4.jpg" />
+<p class="caption"><span class="caption-text">Fig. 3.4 Multicopter hardware system</span></p>
+</div>
+</div></blockquote>
+<p>(5). Instructional Package</p>
+<p>This book encompasses video tutorials, PowerPoint files, and source code examples.
+The topic is closely related to our previous book <a class="footnote-reference" href="#f8" id="id3">[3]</a>.</p>
+</div>
+<div class="section" id="platform-advantage">
+<h2>1.2. Platform Advantage<a class="headerlink" href="#platform-advantage" title="Permalink to this headline">¶</a></h2>
+<p>This experimental platform provides interfaces for multicopter controller design in
+MATLAB/Simulink. Readers (beginners, students, or engineers) can develop a rapid
+design and verify the control algorithms by SIL simulation. After the control
+algorithms are well designed and verified, the platform also provides a code generation
+function to generate Simulink controllers to C/C++ code. Then, the code can be
+compiled into the autopilot software firmware file; finally, it is automatically uploaded
+to the Pixhawk hardware. The platform also provides a HIL simulation platform
+for preliminary simulation tests on a Pixhawk autopilot system that may help in
+eliminating potential problems that may exist in flight tests. After all the tests are
+completed, indoor and outdoor flight tests can be carried out by assembling the Pixhawk
+autopilot onto a real multicopter hardware system. The performance of the
+designed controllers can be evaluated through experimental tests.</p>
+<p class="rubric">References</p>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>corresponding to the circuit diagram version Pixhawk 2.4.6; for more details, please visit this website: <a class="reference external" href="https://docs.px4.io/master/en/flight_controller/pixhawk.html">https://docs.px4.io/master/en/flight_controller/pixhawk.html</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>In addition to supporting the PX4 autopilot software used in this book, the Pixhawk series autopilots also support Ardupilot open-source autopilot software; see: <a class="reference external" href="http://ardupilot.org/dev/index.html">http://ardupilot.org/dev/index.html</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>© Publishing House of Electronics Industry 2020 Q. Quan et al., Multicopter Design and Control Practice, <a class="reference external" href="https://doi.org/10.1007/978-981-15-3138-5_3">https://doi.org/10.1007/978-981-15-3138-5_3</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ControllerDesignAndSimulationPlatform.html" class="btn btn-neutral float-right" title="2. Simulink-Based Controller Design and Simulation Platform" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../2_Configuration/HardwareConfiguration.html" class="btn btn-neutral float-left" title="3. Hardware Platform Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rfly
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
